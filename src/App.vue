@@ -49,6 +49,7 @@ export default {
 .section__heading{
   color: #222831;
   transition: all 0.3s ease 0s;
+  width:10%;
   cursor: pointer;
 }
 
@@ -67,6 +68,7 @@ export default {
 
 .container{
   padding: 30px 10%;
+  
 }
 
 

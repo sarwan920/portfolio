@@ -17,7 +17,7 @@ export default {};
 
 <style scoped>
 footer {
-  padding: 20px;
+  padding: 10px;
   position: fixed;
   left: 0;
   bottom: 0;
