@@ -1,28 +1,37 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <Navigation />
+    <About />
+    <Portfolio />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navigation from "./components/Navigation.vue";
+import About from "./components/About.vue";
+import Portfolio from "./components/Portfolio.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Navigation,
+    About,
+    Portfolio,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Stardos+Stencil&display=swap');
+
+* {
+  box-sizing: border-box;
+  background-color: #00022E;
+ font-family: 'Stardos Stencil', cursive;
+
+
 }
+
+
 </style>
