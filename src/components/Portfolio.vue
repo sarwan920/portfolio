@@ -1,7 +1,7 @@
 <template>
   <div>
-    <section>
-      <h1>Portfolio</h1>
+    <section class="container">
+      <h1 class="section__heading">Portfolio</h1>
     </section>
   </div>
 </template>
@@ -10,12 +10,10 @@
 export default {};
 </script>
 
-<style>
-    section{
+<style scoped>
+    /* section{
         padding: 30px 10%;
-    }
+    } */
 
-    h1{
-        color: #fffbfc;
-    }
+   
 </style>
