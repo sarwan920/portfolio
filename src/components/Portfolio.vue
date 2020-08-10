@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="container">
-      <h1 class="section__heading">Portfolio</h1>
+      <h1 class="section__heading">My Portfolio</h1>
     </section>
   </div>
 </template>

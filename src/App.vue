@@ -56,6 +56,11 @@ export default {
     color: #0F9B8E;
 }
 
+/* body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+} */
 
 
 

@@ -10,10 +10,7 @@
           Strong engineering professional with a Bachelor's degree focused in
           Computer Science from University of Sindh.
         </p>
-        
       </div>
-
-      
     </section>
   </div>
 </template>
@@ -27,10 +24,9 @@ export default {};
   padding: 30px 10%;
 } */
 
-.about__detail{
-  padding-right: 500px;
+.about__detail {
+  width: 60%;
   margin-top: 10px;
-  }
-
-
+  text-align: justify;
+}
 </style>
