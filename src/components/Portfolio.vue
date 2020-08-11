@@ -3,23 +3,15 @@
     <section class="container">
       <h1 class="section__heading">My Portfolio</h1>
       <div class="card__container">
-        <div
-          v-for="test in tests"
-          v-bind:key="test"
-          class="card"
-          style="width: 18rem;"
-        >
+        <div class="card" v-for="test in tests" v-bind:key="test">
           <img
-            class="card-img-top"
-            src="https://i.ytimg.com/vi/EoHQtXNVKH8/maxresdefault.jpg"
-            alt="Card image cap"
+            src="https://api.time.com/wp-content/uploads/2019/08/better-smartphone-photos.jpg"
+            alt="Avatar"
+            style="width:100%"
           />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
+          <div class="container">
+            <h4><b>John Doe</b></h4>
+            <p>Architect Engineer</p>
             <a href="#" class="btn btn-primary">Go Live</a>
           </div>
         </div>
@@ -32,54 +24,48 @@
 export default {
   data() {
     return {
-      tests: [1, 2,2,2,4,]
+      tests: [1, 2, 2, 2],
     };
   },
 };
 </script>
 
 <style scoped>
-.card {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 2px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
-  margin:1rem;
-}
-
-.card__container{
-  display:flex;
-  flex-direction: row;
+ .card {
+/*Add shadows to create the "card" effect*/ 
+  /* border-radius: 10px; */
+  width: 18rem;
+  /* box-shadow: 0 4px 8px 0 rgba(15, 155, 141, 1); */
+   box-shadow: 0 1px 3px rgba(15, 155, 141, 0.12), 0 1px 2px rgba(15, 155, 141, 0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  transition: 0.3s;
+  margin: 10px 0;
   
 }
 
-.card-img-top {
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  width: 100%;
+
+
+/* On mouse-over, add a deeper shadow */
+ .card:hover {
+  /* box-shadow: 0 8px 8px 0 #0f9b8d; */
+  box-shadow: 0 14px 28px rgba(15, 155, 141, 0.25), 0 10px 10px rgba(15, 155, 141, 0.22);
+} 
+
+
+
+
+
+.card__container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+
+  /* grid-template-columns: 50% 50%; */
 }
 
-.card-body {
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  min-height: 1px;
-  padding: 1.25rem;
-}
-
-.card-title {
-  margin-bottom: 0.75rem;
-}
-
-.card-text:last-child {
-  margin-bottom: 0;
-}
+/* Add some padding inside the card container */
+/* .container {
+  padding: 2px 16px;
+} */
 
 .btn {
   display: inline-block;
@@ -116,4 +102,30 @@ export default {
 a {
   text-decoration: none;
 }
+
+
+@media only screen and (max-width: 480px) {
+ 
+ .card__container {
+  display: grid;
+  /* grid-template-columns: 25% 25% 25% 25%; */
+
+  grid-template-columns: 100%;
+  justify-content: center;
+}
+
+
+.card {
+  /* Add shadows to create the "card" effect */
+  width: 18rem;
+  box-shadow: 0 4px 8px 0 #0f9b8e;
+  transition: 0.3s;
+  margin: 20px 0px;
+}
+
+}
+
+
+
+
 </style>

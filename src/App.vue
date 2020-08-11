@@ -3,6 +3,8 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <Navigation />
 
+    <IntroCard />
+
     <About />
 
     <Skills />
@@ -19,6 +21,7 @@ import About from "./components/About.vue";
 import Skills from "./components/Skills.vue";
 import Portfolio from "./components/Portfolio.vue";
 import Footer from "./components/Footer.vue";
+import IntroCard from "./components/IntroCard.vue";
 
 export default {
   name: "App",
@@ -27,7 +30,8 @@ export default {
     About,
     Portfolio,
     Skills,
-    Footer
+    Footer,
+    IntroCard,
   },
 };
 </script>
@@ -69,6 +73,15 @@ export default {
 .container{
   padding: 30px 10%;
   
+}
+
+
+
+@media only screen and (max-width: 480px) {
+ 
+ .section__heading{
+   width: 100%;
+ }
 }
 
 

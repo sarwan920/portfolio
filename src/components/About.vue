@@ -29,4 +29,16 @@ export default {};
   margin-top: 10px;
   text-align: justify;
 }
+
+
+
+@media only screen and (max-width: 480px) {
+ .about__detail {
+  width: 100%;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+
+}
 </style>
