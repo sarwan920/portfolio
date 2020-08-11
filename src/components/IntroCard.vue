@@ -11,7 +11,7 @@
   <a href="#"><i class="fa fa-facebook"></i></a>
   <!-- <p><button>Contact</button></p> -->
 
-  <button class="button">Contact</button>
+  <a href="#" class="button">Contact</a>
 </div>
 </div>
   
@@ -26,7 +26,7 @@ export default {
 <style scoped>
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
   max-width: 40%;
   margin: auto;
   text-align: center;
@@ -59,6 +59,7 @@ a {
 
 button:hover, a:hover {
   opacity: 0.7;
+  /* background-color: #0d7469; */
 }
 
 i{

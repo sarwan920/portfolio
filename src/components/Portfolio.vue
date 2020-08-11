@@ -24,7 +24,7 @@
 export default {
   data() {
     return {
-      tests: [1, 2, 2, 2],
+      tests: [1, 2, 2, 2,2,2,22,2,2,2,2,2,2,2,2,2,2,2,],
     };
   },
 };
@@ -49,6 +49,7 @@ export default {
  .card:hover {
   /* box-shadow: 0 8px 8px 0 #0f9b8d; */
   box-shadow: 0 14px 28px rgba(15, 155, 141, 0.25), 0 10px 10px rgba(15, 155, 141, 0.22);
+  transform: scale(1.1);
 } 
 
 
