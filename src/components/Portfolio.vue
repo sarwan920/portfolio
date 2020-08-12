@@ -24,38 +24,33 @@
 export default {
   data() {
     return {
-      tests: [1, 2, 2, 2,],
+      tests: [1, 2, 2, 2],
     };
   },
 };
 </script>
 
 <style scoped>
- .card {
-/*Add shadows to create the "card" effect*/ 
+.card {
+  /*Add shadows to create the "card" effect*/
   /* border-radius: 10px; */
   width: 18rem;
   /* box-shadow: 0 4px 8px 0 rgba(15, 155, 141, 1); */
-   box-shadow: 0 1px 3px rgba(15, 155, 141, 0.12), 0 1px 2px rgba(15, 155, 141, 0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 1px 3px rgba(15, 155, 141, 0.12),
+    0 1px 2px rgba(15, 155, 141, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: 0.3s;
   margin: 10px 0;
-  cursor:pointer;
-  
+  cursor: pointer;
 }
 
-
-
 /* On mouse-over, add a deeper shadow */
- .card:hover {
+.card:hover {
   /* box-shadow: 0 8px 8px 0 #0f9b8d; */
-  box-shadow: 0 14px 28px rgba(15, 155, 141, 0.25), 0 10px 10px rgba(15, 155, 141, 0.22);
+  box-shadow: 0 14px 28px rgba(15, 155, 141, 0.25),
+    0 10px 10px rgba(15, 155, 141, 0.22);
   transform: scale(1.05);
-} 
-
-
-
-
+}
 
 .card__container {
   display: grid;
@@ -105,31 +100,42 @@ a {
   text-decoration: none;
 }
 
-
 @media only screen and (max-width: 480px) {
- 
- .card__container {
-  display: grid;
-  /* grid-template-columns: 25% 25% 25% 25%; */
+  .card__container {
+    display: grid;
+    /* grid-template-columns: 25% 25% 25% 25%; */
 
-  grid-template-columns: 100%;
-  justify-content: center;
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    width: 18rem;
+    box-shadow: 0 4px 8px 0 #0f9b8e;
+    transition: 0.3s;
+    margin: 20px 0px;
+  }
 }
 
 
-.card {
-  /* Add shadows to create the "card" effect */
-  width: 18rem;
-  box-shadow: 0 4px 8px 0 #0f9b8e;
-  transition: 0.3s;
-  margin: 20px 0px;
+@media only screen and (min-width: 1366px) {
+  .card__container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+
+    /* grid-template-columns: 100%; */
+    justify-content: center;
+  }
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    width: 15rem;
+    box-shadow: 0 4px 8px 0 #0f9b8e;
+    transition: 0.3s;
+    margin: 20px 0px;
+  }
 }
-
-
-
-
-}
-
 
 
 

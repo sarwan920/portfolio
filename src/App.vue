@@ -53,7 +53,7 @@ export default {
 .section__heading{
   color: #222831;
   transition: all 0.3s ease 0s;
-  width:10%;
+  width:100%;
   cursor: pointer;
 }
 
@@ -71,6 +71,7 @@ export default {
 
 
 .container{
+  /* text-align:center; */
   padding: 30px 10%;
   
 }

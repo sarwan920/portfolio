@@ -25,9 +25,9 @@ export default {};
 } */
 
 .about__detail {
-  width: 60%;
+  width: 100%;
   margin-top: 10px;
-  text-align: justify;
+  text-align: center;
 }
 
 
