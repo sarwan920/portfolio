@@ -55,7 +55,8 @@ export default {
   transition: all 0.3s ease 0s;
   width:100%;
   cursor: pointer;
-}
+  text-align: center;
+  }
 
 .section__heading:hover{
     color: #0F9B8E;

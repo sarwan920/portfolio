@@ -100,7 +100,7 @@ a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   .card__container {
     display: grid;
     /* grid-template-columns: 25% 25% 25% 25%; */
@@ -108,6 +108,10 @@ a {
     grid-template-columns: 100%;
     justify-content: center;
   }
+
+  /* .container{
+    align-content: center;
+  } */
 
   .card {
     /* Add shadows to create the "card" effect */
@@ -131,6 +135,27 @@ a {
   .card {
     /* Add shadows to create the "card" effect */
     width: 15rem;
+    box-shadow: 0 4px 8px 0 #0f9b8e;
+    transition: 0.3s;
+    margin: 20px 0px;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 500px) and (max-width:980px) {
+  .card__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    /* grid-template-columns: 100%; */
+    justify-content: center;
+  }
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    width: 18rem;
     box-shadow: 0 4px 8px 0 #0f9b8e;
     transition: 0.3s;
     margin: 20px 0px;
