@@ -5,10 +5,10 @@
   <h1>Sarwan Nizamani</h1>
   <p class="title">Full Stack Web Developer</p>
   <p>University of Sindh, Jamshoro</p>
-  <a href="#"><i class="fa fa-github"></i></a>
-  <a href="#"><i class="fa fa-twitter"></i></a>
-  <a href="#"><i class="fa fa-linkedin"></i></a>
-  <a href="#"><i class="fa fa-facebook"></i></a>
+  <a href="https://github.com/sarwan920"><i class="fa fa-github"></i></a>
+  <a href="https://twitter.com/0Sarwan"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.linkedin.com/in/sarwan-nizamani-7b5a87b8/"><i class="fa fa-linkedin"></i></a>
+  <a href="https://web.facebook.com/sarwan.nizamani"><i class="fa fa-facebook"></i></a>
   <!-- <p><button>Contact</button></p> -->
 
   <a href="#" class="button">Contact</a>
