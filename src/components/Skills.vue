@@ -31,14 +31,39 @@ export default {
 
 <style scoped>
 ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
   align-content: space-between;
   text-align: center;
 }
 
 ul li {
   list-style: none;
-  margin: 20px;
+  margin: 20px 20px;
+  cursor: pointer;
   /* justify-content: center; */
+}
+
+
+
+ul li:hover {
+  transform :scale(1.1);
+  transition:0.3s;
+  
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+ 
+ ul {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-content: space-between;
+  text-align: center;
+}
+
+
 }
 </style>
