@@ -40,6 +40,7 @@ export default {
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   transition: 0.3s;
   margin: 10px 0;
+  cursor:pointer;
   
 }
 
